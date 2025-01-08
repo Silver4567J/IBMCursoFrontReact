@@ -7,6 +7,7 @@ function App(props) {
       <h2>Hoy es {currDate.toLocaleDateString()} y la hora es: {currDate.toLocaleTimeString()}.</h2>
     </div>
   );
-}
+} 
+
 
 export default App;

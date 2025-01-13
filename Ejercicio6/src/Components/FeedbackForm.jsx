@@ -23,6 +23,7 @@ const FeedbackForm = () => {
           Name: ${formData.name}
           Email: ${formData.email}
           Feedback: ${formData.feedback}
+          Rating: ${formData.rating}
         `;
         const isConfirmed = window.confirm(`Please confirm your details:\n\n${confirmationMessage}`);
         if (isConfirmed) {
@@ -30,7 +31,8 @@ const FeedbackForm = () => {
             setFormData({
                 name: '',
                 email: '',
-                feedback: ''
+                feedback: '',
+                rating: ''
             });
             alert('Thank you for your valuable feedback!');
         }
